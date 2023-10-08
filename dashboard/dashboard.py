@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-image_url = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fid%2Fvektor%2Flogo-untuk-penyewaan-sepeda-ilustrasi-vektor-pada-latar-belakang-putih-gm1152337760-312592794&psig=AOvVaw1mUotjIsjR3DW1GlPPktyq&ust=1696843525601000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOiry-6Q5oEDFQAAAAAdAAAAABAE'
 
 # Membaca data dari file CSV
-df_hour = pd.read_csv('hour_df.csv')
-df_day = pd.read_csv('day_df.csv')
+df_hour = pd.read_csv('hour.csv')
+df_day = pd.read_csv('day.csv')
 
 # Fungsi untuk menghitung rata-rata harian
 def calculate_daily_average(data):
